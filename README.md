@@ -1,2 +1,27 @@
 # Alaska_code_
-Code challange repo for the org Alaska 
+# DICOM Album Upload 
+
+This is a Django-based web app that allows uploading DICOM (.dcm) files, extracts basic patient metadata (like name and study date), and displays them in a responsive UI.
+
+## 🌐 Features
+
+- Upload `.dcm` files
+- Parse and display patient info
+- Store uploaded files locally
+- Mobile-responsive frontend
+
+## 🛠️ Tech Stack
+
+- Django
+- HTML/CSS
+- Pydicom
+
+## 🧪 How to Run
+
+```bash
+git clone https://github.com/yourusername/dicom-album
+cd dicom-album
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
