@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DICOM File Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f4f7f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .details p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .value {
+      color: #333;
+    }
+
+    a.button {
+      display: block;
+      margin-top: 1.5rem;
+      text-align: center;
+      padding: 0.75rem;
+      background: #007bff;
+      color: white;
+      border-radius: 0.5rem;
+      text-decoration: none;
+    }
+
+    a.button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DICOM File Details</h1>
+    <div class="details">
+      <p><span class="label">Patient Name:</span> <span class="value">{{ patient_name }}</span></p>
+      <p><span class="label">Study Date:</span> <span class="value">{{ study_date }}</span></p>
+      <p><span class="label">File Path:</span> <span class="value">{{ file_path }}</span></p>
+    </div>
+    <a class="button" href="{% url 'upload' %}">Upload Another File</a>
+  </div>
+</body>
+</html>
