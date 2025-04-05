@@ -19,7 +19,7 @@ This is a Django-based web app that allows uploading DICOM (.dcm) files, extract
 ## 🧪 How to Run
 
 ```bash
-git clone https://github.com/yourusername/dicom-album
+git clone https://github.com/Spurgeon008/Alaska_code_.git
 cd dicom-album
 # For Docker v1
 docker-compose up --build
