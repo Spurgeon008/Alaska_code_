@@ -1,7 +1,7 @@
 # Alaska_code_
 # DICOM Album Upload 
 
-This is a Django-based web app that allows uploading DICOM (.dcm) files, extracts basic patient metadata (like name and study date), and displays them in a responsive UI.
+This is a Django-based web app that allows uploading DICOM (.dcm) files, extracts basic patient metadata (like name and study date), and displays them.
 
 ## 🌐 Features
 
