@@ -21,7 +21,9 @@ This is a Django-based web app that allows uploading DICOM (.dcm) files, extract
 ```bash
 git clone https://github.com/yourusername/dicom-album
 cd dicom-album
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+# For Docker v1
+docker-compose up --build
+# For Docker v2
+docker compose up --build
+
 
